@@ -455,7 +455,11 @@
             project1: {
                 title: "Modern Villa Pool",
                 subtitle: "Luxury residential design",
-                description: "A stunning infinity pool with seamless edge and integrated lighting system.",
+                description: [
+                    "<p>Dive into crystal-clear relaxation with our modern swimming pools designed for every lifestyle. Whether you’re looking to unwind after a long day or create unforgettable family memories, our pools offer the perfect escape right in your backyard. Each design blends functionality and beauty, turning ordinary spaces into refreshing retreats.</p>",
+                    "<p>Our pools are crafted with precision and care, using high-quality materials and eco-friendly filtration systems that keep the water sparkling clean year-round. From compact plunge pools to expansive lap lanes, we customize every feature to fit your space, budget, and vision.</p>",
+                    "<p>Enjoy more than just a swim — experience the luxury of water. With soft lighting, temperature control, and stylish finishes, your pool becomes a centerpiece for relaxation, entertainment, and wellness.</p>",
+                ],
                 media: [
                     { type: "image", src: "1.jpg" },
                     { type: "image", src: "2.jpg" },
@@ -467,7 +471,11 @@
             project2: {
                 title: "Urban Courtyard Spa",
                 subtitle: "Compact elegance",
-                description: "An intimate courtyard pool with waterfall feature and custom stone finish.",
+                description: [
+                    "<p>We specialize in the design and installation of durable, energy-efficient swimming pools. Every project begins with a detailed site assessment to ensure structural stability, optimal water circulation, and long-term reliability. Our engineering team applies the latest construction methods to deliver pools that meet both aesthetic and performance standards.</p>",
+                    "<p>From reinforced concrete shells to advanced composite coatings, our materials are selected to resist weathering, cracking, and chemical wear. Automated filtration, heating, and lighting systems provide easy maintenance and lower operational costs.</p>",
+                    "<p>Our mission is to build pools that stand the test of time — combining safety, technology, and elegant design. Whether for private homes, hotels, or public facilities, we deliver consistent quality on every project.</p>"
+                ],
                 media: [
                     { type: "image", src: "3.jpg" },
                     { type: "video", src: "m1_out.mp4", thumb: "m1_thumbnail.jpg" },
@@ -478,7 +486,11 @@
             project3: {
                 title: "Urban Courtyard Spa",
                 subtitle: "Compact elegance",
-                description: "An intimate courtyard pool with waterfall feature and custom stone finish.",
+                description: [
+                    "<p>There’s something magical about the stillness of water at sunrise. A pool isn’t just a feature — it’s a daily ritual of calm, clarity, and connection. Whether you start your morning with a few quiet laps or unwind after sunset, swimming becomes a moment to reset and recharge.</p>",
+                    "<p>Modern pools today are more than concrete basins; they’re personal wellness zones. With saltwater systems, natural stone finishes, and gentle LED lighting, even a small backyard pool can feel like a private spa.</p>",
+                    "<p>So take a deep breath and dive in. The water awaits — cool, clean, and ready to remind you that every day holds space for balance, movement, and serenity.</p>"
+                ],
                 media: [
                     { type: "image", src: "1.jpg" },
                     { type: "image", src: "2.jpg" },
@@ -520,7 +532,7 @@
 
                 document.getElementById("modalTitle").textContent = project.title;
                 document.getElementById("modalSubtitle").textContent = project.subtitle;
-                document.getElementById("modalDescription").textContent = project.description;
+                document.getElementById("modalDescription").innerHTML = project.description.join("\n");
 
                 mediaList = project.media;
                 thumbs.innerHTML = "";
