@@ -10,21 +10,6 @@
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <style>
-        :root {
-            --bs-primary: #003153;
-            /* your Prussian Blue */
-            --bs-primary-rgb: 0, 49, 83;
-            /* required for hover/active shades */
-
-            --bs-secondary: #4A5A6A;
-            /* slate blue */
-            --bs-secondary-rgb: 74, 90, 106;
-
-            --bs-success: #6B7B8C;
-            /* grey blue */
-            --bs-success-rgb: 107, 123, 140;
-        }
-
         .btn-primary {
             background-color: #003153 !important;
             border-color: #003153 !important;
@@ -35,7 +20,6 @@
         .btn-primary:focus,
         .btn-primary:active {
             background-color: #002340 !important;
-            /* slightly darker */
             border-color: #002340 !important;
         }
 
@@ -43,58 +27,18 @@
             background-color: #003153 !important;
         }
 
-        /* Normal outline button */
         .btn-outline-primary {
             color: #003153 !important;
-            /* Prussian Blue text */
             border-color: #003153 !important;
-            /* Prussian Blue border */
             background-color: transparent !important;
         }
 
-        /* Hover / focus / active state */
         .btn-outline-primary:hover,
         .btn-outline-primary:focus,
         .btn-outline-primary:active {
             color: white !important;
-            /* text becomes white */
             background-color: #003153 !important;
-            /* fill with Prussian Blue */
             border-color: #003153 !important;
-        }
-
-        /* :root {
-            --bs-primary: #003153 !important;
-            --bs-primary-rgb: 0,49,83 !important;
-        } */
-        /* .btn-primary {
-  background-color: #003153 !important;
-  border-color: #003153 !important;
-  color: white !important;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: #002340 !important;
-  border-color: #002340 !important;
-} */
-        /* :root {
-            --grey-blue: #6B7B8C;
-            --slate-blue: #4A5A6A;
-            --prussian-blue: #003153;
-        } */
-
-        .bg-grey-blue {
-            background-color: var(--grey-blue) !important;
-        }
-
-        .bg-slate-blue {
-            background-color: var(--slate-blue) !important;
-        }
-
-        .bg-prussian-blue {
-            background-color: var(--prussian-blue) !important;
         }
 
         .hero {
@@ -135,7 +79,6 @@
 
         nav.navbar.scrolled {
             background-color: #2a82ad !important;
-            /* background-color: rgba(33, 37, 41, 0.95) !important; */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
@@ -198,7 +141,6 @@
             color: white;
         }
 
-        /* .filter-btn.active {?} */
         /* 6. contact us */
         section.contact {
             background-color: #228fbc;
@@ -235,6 +177,10 @@
             animation: slideDown 0.6s ease forwards;
         }
 
+        #viewer {
+            background-color: #020506 !important;
+        }
+
         #viewer img,
         #viewer video {
             width: 100%;
@@ -256,38 +202,6 @@
             border: 2px solid transparent;
             border-radius: 4px;
             transition: border-color 0.2s;
-        }
-
-        #modalThumbs img.active,
-        #modalThumbs img:hover {
-            /* border-color: #0d6efd; */
-        }
-
-        .btn-primary {
-            /* background-color: #003153 !important; */
-            /* border-color: #003153 !important; */
-            /* color: white !important; */
-        }
-
-        .btn-primary:hover,
-        .btn-primary:focus,
-        .btn-primary:active {
-            /* background-color: #2a82ad !important; */
-            /* border-color: #25769f !important; */
-            /* color: white !important; */
-        }
-
-        .btn-outline-primary {
-            /* border-color: #2a82ad !important; */
-            /* color: #2a82ad !important; */
-        }
-
-        .btn-outline-primary:hover,
-        .btn-outline-primary:focus,
-        .btn-outline-primary:active {
-            /* background-color: #2a82ad !important; */
-            /* border-color: #25769f !important; */
-            /* color: white !important; */
         }
     </style>
 </head>
@@ -426,14 +340,12 @@
     <section id="gallery2" class="bg-light">
         <div class="container py-5">
             <h1 class="text-center mb-4">Our Projects</h1>
-            <!-- FILTER BUTTONS -->
             <div class="text-center mb-4">
                 <button class="btn btn-outline-primary me-2 filter-btn active" data-filter="all">All</button>
                 <button class="btn btn-outline-primary me-2 filter-btn" data-filter="project1">Project 1</button>
                 <button class="btn btn-outline-primary me-2 filter-btn" data-filter="project2">Project 2</button>
                 <button class="btn btn-outline-primary filter-btn" data-filter="project3">Project 3</button>
             </div>
-            <!-- GALLERY GRID -->
             <div class="row g-3" id="gallery">
                 <div class="col-sm-6 col-md-4 gallery-item" data-category="project1" data-project="project1">
                     <img src="2.jpg" alt="Project 1" />
@@ -521,7 +433,7 @@
             <div class="modal-content bg-dark text-white slide-down">
                 <!-- Viewer area -->
                 <div id="viewerWrapper" class="position-relative overflow-hidden" style="height:60vh;">
-                    <div id="viewer" class="w-100 h-100 d-flex align-items-center justify-content-center bg-black">
+                    <div id="viewer" class="w-100 h-100 d-flex align-items-center justify-content-center">
                     </div>
                     <button type="button" class="btn btn-light position-absolute top-0 end-0 m-3"
                         data-bs-dismiss="modal" aria-label="Close">✕</button>
@@ -548,9 +460,8 @@
                     { type: "image", src: "1.jpg" },
                     { type: "image", src: "2.jpg" },
                     { type: "video", src: "m3_out.mp4", thumb: "m3_thumbnail.jpg" },
-                    { type: "image", src: "1.jpg" },
-                    { type: "image", src: "2.jpg" },
-                    { type: "video", src: "m3_out.mp4", thumb: "m3_thumbnail.jpg" }
+                    { type: "video", src: "m4_out.mp4", thumb: "m4_thumbnail.jpg" },
+                    { type: "video", src: "m5_out.mp4", thumb: "m5_thumbnail.jpg" },
                 ]
             },
             project2: {
@@ -559,9 +470,9 @@
                 description: "An intimate courtyard pool with waterfall feature and custom stone finish.",
                 media: [
                     { type: "image", src: "3.jpg" },
+                    { type: "video", src: "m1_out.mp4", thumb: "m1_thumbnail.jpg" },
+                    { type: "video", src: "m2_out.mp4", thumb: "m2_thumbnail.jpg" },
                     { type: "image", src: "2.jpg" },
-                    { type: "image", src: "3.jpg" },
-                    { type: "image", src: "2.jpg" }
                 ]
             },
             project3: {
@@ -569,12 +480,14 @@
                 subtitle: "Compact elegance",
                 description: "An intimate courtyard pool with waterfall feature and custom stone finish.",
                 media: [
-                    { type: "image", src: "3.jpg" },
+                    { type: "image", src: "1.jpg" },
                     { type: "image", src: "2.jpg" },
                     { type: "image", src: "3.jpg" },
-                    { type: "image", src: "2.jpg" },
-                    { type: "image", src: "3.jpg" },
-                    { type: "image", src: "2.jpg" }
+                    { type: "video", src: "m1_out.mp4", thumb: "m1_thumbnail.jpg" },
+                    { type: "video", src: "m2_out.mp4", thumb: "m2_thumbnail.jpg" },                    { type: "image", src: "1.jpg" },
+                    { type: "video", src: "m3_out.mp4", thumb: "m3_thumbnail.jpg" },
+                    { type: "video", src: "m4_out.mp4", thumb: "m4_thumbnail.jpg" },
+                    { type: "video", src: "m5_out.mp4", thumb: "m5_thumbnail.jpg" },
                 ]
             }
         };
@@ -637,7 +550,6 @@
             }
         });
     </script>
-
 
     <!-- Contact / view type = form -->
     <section id="contact" class="contact text-center">
