@@ -1,0 +1,8 @@
+// 1. mov -> mp4 fullhd
+ffmpeg -i m3.mov -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m3_out.mp4
+
+// 2. mov -> webm/vp9 fullhd
+ffmpeg -i m3.mov -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m3_out.webm
+
+// 3. mov -> thumbnail
+ffmpeg -i m3.mov -ss 1 -vframes 1 -vf "scale=200:150:force_original_aspect_ratio=decrease,pad=200:150:(ow-iw)/2:(oh-ih)/2:black" -q:v 3 m3_thumbnail.jpg
