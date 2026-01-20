@@ -1,8 +1,35 @@
 // 1. mov -> mp4 fullhd
-ffmpeg -i m3.mov -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m3_out.mp4
-
 // 2. mov -> webm/vp9 fullhd
-ffmpeg -i m3.mov -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m3_out.webm
-
 // 3. mov -> thumbnail
-ffmpeg -i m3.mov -ss 1 -vframes 1 -vf "scale=200:150:force_original_aspect_ratio=decrease,pad=200:150:(ow-iw)/2:(oh-ih)/2:black" -q:v 3 m3_thumbnail.jpg
+
+ffmpeg -i m1.mov -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m1_out.mp4
+ffmpeg -i m1.mov -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m1_out.webm
+ffmpeg -i m1.mov -ss 1 -vframes 1 -vf "scale=400:300:force_original_aspect_ratio=decrease,pad=400:300:(ow-iw)/2:(oh-ih)/2:black" -q:v 1 m1_thumbnail.jpg
+
+ffmpeg -i m2.mov -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m2_out.mp4
+ffmpeg -i m2.mov -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m2_out.webm
+ffmpeg -i m2.mov -ss 1 -vframes 1 -vf "scale=400:300:force_original_aspect_ratio=decrease,pad=400:300:(ow-iw)/2:(oh-ih)/2:black" -q:v 1 m2_thumbnail.jpg
+
+ffmpeg -i m3.mov -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m3_out.mp4
+ffmpeg -i m3.mov -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m3_out.webm
+ffmpeg -i m3.mov -ss 1 -vframes 1 -vf "scale=400:300:force_original_aspect_ratio=decrease,pad=400:300:(ow-iw)/2:(oh-ih)/2:black" -q:v 1 m3_thumbnail.jpg
+
+ffmpeg -i m4.mov -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m4_out.mp4
+ffmpeg -i m4.mov -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m4_out.webm
+ffmpeg -i m4.mov -ss 1 -vframes 1 -vf "scale=400:300:force_original_aspect_ratio=decrease,pad=400:300:(ow-iw)/2:(oh-ih)/2:black" -q:v 1 m4_thumbnail.jpg
+
+ffmpeg -i m5.mov -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m5_out.mp4
+ffmpeg -i m5.mov -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m5_out.webm
+ffmpeg -i m5.mov -ss 1 -vframes 1 -vf "scale=400:300:force_original_aspect_ratio=decrease,pad=400:300:(ow-iw)/2:(oh-ih)/2:black" -q:v 1 m5_thumbnail.jpg
+
+ffmpeg -i m6.mov -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m6_out.mp4
+ffmpeg -i m6.mov -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m6_out.webm
+ffmpeg -i m6.mov -ss 1 -vframes 1 -vf "scale=400:300:force_original_aspect_ratio=decrease,pad=400:300:(ow-iw)/2:(oh-ih)/2:black" -q:v 1 m6_thumbnail.jpg
+
+ffmpeg -i m7.mp4 -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m7_out.mp4
+ffmpeg -i m7.mp4 -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m7_out.webm
+ffmpeg -i m7.mp4 -ss 1 -vframes 1 -vf "scale=400:300:force_original_aspect_ratio=decrease,pad=400:300:(ow-iw)/2:(oh-ih)/2:black" -q:v 1 m7_thumbnail.jpg
+
+ffmpeg -i m8.mp4 -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m8_out.mp4
+ffmpeg -i m8.mp4 -c:v libvpx-vp9 -b:v 0 -crf 32 -pix_fmt yuv420p -an -movflags +faststart -vf "scale=1920:-2" m8_out.webm
+ffmpeg -i m8.mp4 -ss 1 -vframes 1 -vf "scale=400:300:force_original_aspect_ratio=decrease,pad=400:300:(ow-iw)/2:(oh-ih)/2:black" -q:v 1 m8_thumbnail.jpg

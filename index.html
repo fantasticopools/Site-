@@ -7,217 +7,41 @@
     <title>Fantastico Pools</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
-    <style>
-        .btn-primary {
-            background-color: #003153 !important;
-            border-color: #003153 !important;
-            color: white !important;
-        }
-
-        .btn-primary:hover,
-        .btn-primary:focus,
-        .btn-primary:active {
-            background-color: #002340 !important;
-            border-color: #002340 !important;
-        }
-
-        .navbar.bg-primary {
-            background-color: #003153 !important;
-        }
-
-        .btn-outline-primary {
-            color: #003153 !important;
-            border-color: #003153 !important;
-            background-color: transparent !important;
-        }
-
-        .btn-outline-primary:hover,
-        .btn-outline-primary:focus,
-        .btn-outline-primary:active {
-            color: white !important;
-            background-color: #003153 !important;
-            border-color: #003153 !important;
-        }
-
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .hero-video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: 0;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-        }
-
-        .hero-overlay {
-            background: rgba(0, 0, 0, 0.38);
-            z-index: 1;
-        }
-
-        .hero-content {
-            z-index: 2;
-            color: #fff;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-        }
-
-        /* 2. nav */
-        nav.navbar {
-            transition: background-color 0.4s ease, box-shadow 0.4s ease;
-        }
-
-        nav.navbar.scrolled {
-            background-color: #2a82ad !important;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        /* 3. features */
-        section.features {
-            background-color: #f8f9fa;
-            padding: 5rem 0;
-        }
-
-        /* 4. gallery 1 */
-        section.gallery {
-            padding: 5rem 0;
-        }
-
-        .gallery img {
-            object-fit: cover;
-            height: 250px;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        /* 5. gallery 2 */
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .gallery-info {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            color: #fff;
-            padding: 0.75rem;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .gallery-item:hover .gallery-info {
-            opacity: 1;
-        }
-
-        .filter-btn.active {
-            background-color: #2a82ad;
-            color: white;
-        }
-
-        /* 6. contact us */
-        section.contact {
-            background-color: #228fbc;
-            color: #fff;
-            padding: 5rem 0;
-        }
-
-        /* 7. parallax - request a quote */
-        .parallax {
-            position: relative;
-            min-height: 100vh;
-            background-image: url('1.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            color: #fff;
-        }
-
-        /* 8. project detail modal */
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .slide-down {
-            animation: slideDown 0.6s ease forwards;
-        }
-
-        #viewer {
-            background-color: #020506 !important;
-        }
-
-        #viewer img,
-        #viewer video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            user-select: none;
-            pointer-events: none;
-        }
-
-        .modal-body {
-            background-color: #2a3b4b;
-        }
-
-        #modalThumbs img {
-            width: 90px;
-            height: 60px;
-            object-fit: cover;
-            cursor: pointer;
-            border: 2px solid transparent;
-            border-radius: 4px;
-            transition: border-color 0.2s;
-        }
-    </style>
+    
+    <!-- Google Fonts - Uncomment one of the following to test different font styles -->
+    <!-- Option 1: Poppins (modern, clean, friendly) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Option 2: Playfair Display (elegant, luxury, sophisticated) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Option 3: Inter (contemporary, highly readable, professional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" style="font-family: inherit;">
+    <!-- Uncomment ONE of the following inline styles to apply your chosen Google Font to the entire page -->
+    <style>body { font-family: 'Poppins', sans-serif !important; }</style>
+    <!-- <style>body { font-family: 'Playfair Display', serif !important; }</style> -->
+    <!-- <style>body { font-family: 'Inter', sans-serif !important; }</style> -->
     <!-- nav -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: transparent;">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Fantastico Pools</a>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="fplogo.webp" alt="Fantastico Pools logo" class="navbar-logo me-2" />
+                <span class="navbar-brand-text">Fantastico Pools</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#aboutus">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#gallery">Gallery</a>
@@ -225,8 +49,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#gallery2">Our Projects</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="templatesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Templates
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="templatesDropdown">
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                            <li><a class="dropdown-item" href="#process">Process</a></li>
+                            <li><a class="dropdown-item" href="#materials">Materials</a></li>
+                            <li><a class="dropdown-item" href="#before-after">Before & After</a></li>
+                            <li><a class="dropdown-item" href="#financing">Financing</a></li>
+                            <li><a class="dropdown-item" href="#maintenance-guide">Maintenance</a></li>
+                            <li><a class="dropdown-item" href="#safety">Safety</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#requestaquote">Request a Quote</a>
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -238,7 +76,7 @@
 
     <!-- hero -->
     <header class="hero position-relative text-center d-flex align-items-center justify-content-center text-white">
-        <video autoplay muted loop playsinline poster="3.jpg" class="hero-video">
+        <video autoplay muted loop playsinline poster="3.jpg" class="hero-video" style="width: 100%; height: 120%; object-fit: cover; object-position: top center;">
             <source src="m3_out.mp4" type="video/mp4" />
             <source src="m3_out.webm" type="video/webm" />
         </video>
@@ -250,58 +88,82 @@
             <p class="lead mb-4">Design. Build. Relax. Your dream pool starts here.</p>
             <a href="#gallery2" class="btn btn-outline-light btn-lg">View Our Work</a>
         </div>
-        <!-- 
-            <h1 class="display-3 fw-bold">Welcome to Our World</h1>
-            <p class="lead mb-4">
-                Discover amazing features and a seamless experience.
-            </p>
-            <a href="#features" class="btn btn-primary btn-lg">Explore More</a>
-             -->
     </header>
 
-    <!-- features -->
-    <section id="features" class="features text-center">
+    <!-- aboutus -->
+    <section id="aboutus" class="aboutus text-center">
         <div class="container">
-            <h2 class="mb-5 fw-bold" data-aos="fade-up">Our Features</h2>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 text-white border-0">
-                        <div class="card-img"
-                            style="background-image: url('2.jpg'); background-size: cover; height: 200px;">
-                        </div>
-                        <div class="card-body bg-dark">
-                            <h5 class="card-title">Feature One</h5>
-                            <p class="card-text">
-                                Description of the first amazing feature.
-                            </p>
+            <h2 class="mb-5 fw-bold" data-aos="fade-up">About us</h2>
+            <div class="row g-4 mb-4">
+                <div class="col-md-8 offset-md-2" data-aos="fade-up" data-aos-delay="100">
+                    <p class="lead">
+                        At Fantastico Pools, we specialize in creating stunning backyard retreats that combine
+                        luxury design with expert craftsmanship. With years of experience in pool construction and
+                        patio design, our team is dedicated to transforming your outdoor space into a personal oasis.
+                        From modern minimalist pools to classic resort-style designs, we work closely with you to
+                        bring your vision to life. Our commitment to quality, attention to detail, and customer
+                        satisfaction sets us apart as your trusted local pool builder. Dive into excellence with
+                        Fantastico Pools – where your dream backyard becomes a reality.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <h3 class="mb-3" data-aos="fade-up" data-aos-delay="200">Our Mission</h3>
+                    <p data-aos="fade-up" data-aos-delay="300">
+                        Our mission at Fantastico Pools is to deliver exceptional pool and patio designs that
+                        enhance the beauty and functionality of your outdoor living space. We are committed to
+                        using high-quality materials, innovative construction techniques, and sustainable practices
+                        to create pools that are not only visually stunning but also durable and easy to maintain.
+                        We strive to exceed our clients' expectations through personalized service, transparent
+                        communication, and a passion for excellence in every project we undertake.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card text-white border-0" style="height: 260px;">
+                        <div class="card-media position-relative" style="height: 260px; overflow: hidden;">
+                            <video class="video-player w-100 h-100 object-fit-cover" data-id="3"
+                                poster="m3_thumbnail.jpg" muted playsinline preload="metadata">
+                                <source src="m3_out.mp4" type="video/mp4" />
+                            </video>
+                            <button
+                                class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow"
+                                data-id="3" style="width: 60px; height: 60px;" aria-label="Play video">
+                                <i class="bi bi-play-fill fs-3 text-primary"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 text-white border-0">
-                        <div class="card-img"
-                            style="background-image: url('3.jpg'); background-size: cover; height: 200px;">
-                        </div>
-                        <div class="card-body bg-dark">
-                            <h5 class="card-title">Feature Two</h5>
-                            <p class="card-text">
-                                Description of the second amazing feature.
-                            </p>
+            </div>
+            <div class="row g-4 mb-4">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card text-white border-0" style="height: 260px;">
+                        <div class="card-img" style="background-image: url('aboutus2.webp'); background-size: cover; height: 260px;">
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 text-white border-0">
-                        <div class="card-img"
-                            style="background-image: url('1.jpg'); background-size: cover; height: 200px;">
-                        </div>
-                        <div class="card-body bg-dark">
-                            <h5 class="card-title">Feature Three</h5>
-                            <p class="card-text">
-                                Description of the third amazing feature.
-                            </p>
+                <div class="col-md-6">
+                    <h3 class="mb-3" data-aos="fade-up" data-aos-delay="200">Our Vision</h3>
+                    <p data-aos="fade-up" data-aos-delay="300">
+                        Our vision at Fantastico Pools is to be the leading provider of innovative and sustainable
+                        pool solutions that inspire and enrich the lives of our clients. We envision a future where
+                        every backyard becomes a sanctuary of relaxation and joy, achieved through cutting-edge
+                        technology, eco-friendly materials, and unparalleled craftsmanship. By staying ahead of
+                        industry trends and continuously improving our processes, we aim to set new standards in
+                        pool design and construction, making luxury accessible to all who dream of it.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <h3 class="mb-3" data-aos="fade-up" data-aos-delay="200">Our Commitment</h3>
+                    <p data-aos="fade-up" data-aos-delay="300">
+                        At Fantastico Pools, we believe in transforming ordinary backyards into extraordinary havens of relaxation and joy. Our team combines creativity with technical expertise to design pools that not only look stunning but also integrate seamlessly with your lifestyle. We prioritize eco-friendly solutions, ensuring that your pool is as kind to the environment as it is to your family. From initial consultation to final completion, we provide unwavering support and craftsmanship that lasts a lifetime.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card text-white border-0" style="height: 260px;">
+                        <div class="card-img" style="background-image: url('aboutus1.webp'); background-size: cover; height: 260px;">
                         </div>
                     </div>
                 </div>
@@ -315,22 +177,147 @@
             <h2 class="mb-5 fw-bold" data-aos="fade-up">Gallery</h2>
             <div class="row g-3">
                 <div class="col-sm-6 col-md-4" data-aos="zoom-in">
-                    <img src="3.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 1" />
+                    <img src="3.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery 1" data-index="0" data-caption="Luxury infinity pool with stunning mountain views" />
                 </div>
                 <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 2" />
+                    <img src="2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery 2" data-index="1" data-caption="Modern pool design with contemporary landscaping" />
                 </div>
                 <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 3" />
+                    <img src="1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery 3" data-index="2" data-caption="Elegant backyard oasis with custom water features" />
                 </div>
                 <div class="col-sm-6 col-md-4" data-aos="zoom-in">
-                    <img src="2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 1" />
+                    <img src="2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery 1" data-index="3" data-caption="Resort-style pool with premium finishes" />
                 </div>
                 <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 2" />
+                    <img src="1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery 2" data-index="4" data-caption="Custom pool construction with attention to detail" />
                 </div>
                 <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="3.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 3" />
+                    <img src="3.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery 3" data-index="5" data-caption="Transforming backyards into dream destinations" />
+                </div>
+                <!-- Moved content from About Us section -->
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in">
+                    <img src="aboutus1.webp" class="img-fluid rounded shadow-sm gallery-img" alt="Making memories in your backyard" data-index="6" data-caption="Creating lasting memories in beautifully designed backyard spaces" />
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="aboutus2.webp" class="img-fluid rounded shadow-sm gallery-img" alt="Attention to detail" data-index="7" data-caption="Every detail matters in crafting your perfect outdoor retreat" />
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="1"
+                            poster="m3_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m3_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="1" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Additional videos -->
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="m1"
+                            poster="m1_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m1_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="m1" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="m2"
+                            poster="m2_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m2_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="m2" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="m3"
+                            poster="m3_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m3_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="m3" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="m4"
+                            poster="m4_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m4_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="m4" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="m5"
+                            poster="m5_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m5_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="m5" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="m6"
+                            poster="m6_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m6_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="m6" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="m7"
+                            poster="m7_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m7_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="m7" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-media position-relative" style="height: 250px; overflow: hidden;">
+                        <video class="video-player w-100 h-100 object-fit-cover gallery-video" data-id="m8"
+                            poster="m8_thumbnail.jpg" muted playsinline preload="metadata">
+                            <source src="m8_out.mp4" type="video/mp4" />
+                        </video>
+                        <button
+                            class="play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow gallery-play-btn"
+                            data-id="m8" style="width: 60px; height: 60px;" aria-label="Play video">
+                            <i class="bi bi-play-fill fs-3 text-primary"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -496,7 +483,7 @@
                     { type: "image", src: "2.jpg" },
                     { type: "image", src: "3.jpg" },
                     { type: "video", src: "m1_out.mp4", thumb: "m1_thumbnail.jpg" },
-                    { type: "video", src: "m2_out.mp4", thumb: "m2_thumbnail.jpg" },                    { type: "image", src: "1.jpg" },
+                    { type: "video", src: "m2_out.mp4", thumb: "m2_thumbnail.jpg" },
                     { type: "video", src: "m3_out.mp4", thumb: "m3_thumbnail.jpg" },
                     { type: "video", src: "m4_out.mp4", thumb: "m4_thumbnail.jpg" },
                     { type: "video", src: "m5_out.mp4", thumb: "m5_thumbnail.jpg" },
@@ -563,12 +550,709 @@
         });
     </script>
 
+    <!-- gallery modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark text-white slide-down">
+                <!-- Viewer area -->
+                <div id="galleryViewerWrapper" class="position-relative overflow-hidden" style="height:80vh;">
+                    <div id="galleryViewer" class="w-100 h-100 d-flex align-items-center justify-content-center">
+                    </div>
+                    <!-- Close button -->
+                    <button type="button" class="btn btn-light position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close">✕</button>
+                    <!-- Previous button -->
+                    <button type="button" class="btn btn-light position-absolute start-0 top-50 translate-middle-y ms-3"
+                        id="galleryPrev" aria-label="Previous image">
+                        <i class="bi bi-chevron-left fs-3"></i>
+                    </button>
+                    <!-- Next button -->
+                    <button type="button" class="btn btn-light position-absolute end-0 top-50 translate-middle-y me-3"
+                        id="galleryNext" aria-label="Next image">
+                        <i class="bi bi-chevron-right fs-3"></i>
+                    </button>
+                </div>
+                <!-- Caption area -->
+                <div id="galleryCaption" class="text-center py-3 px-4" style="display: none;">
+                    <p class="mb-0 text-white fw-medium"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews -->
+    <section id="reviews" class="reviews text-center py-5">
+        <div class="container">
+            <h2 class="mb-5 fw-bold" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="aboutus1.webp" alt="Sarah Johnson" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                            <h5 class="card-title mb-1">Exceptional Craftsmanship</h5>
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2 text-muted">5/5</span>
+                            </div>
+                            <p class="card-text">
+                                "Fantastico Pools transformed our backyard into a stunning oasis. The attention to detail and quality of work exceeded our expectations. Our infinity pool is the centerpiece of our home and we couldn't be happier with the results."
+                            </p>
+                            <p class="text-muted mb-0 fw-bold">Sarah Johnson</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="aboutus2.webp" alt="Michael Chen" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                            <h5 class="card-title mb-1">Dream Pool Come True</h5>
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2 text-muted">5/5</span>
+                            </div>
+                            <p class="card-text">
+                                "From concept to completion, the team at Fantastico Pools was professional and communicative. They incorporated all our design wishes and the pool maintenance system they installed makes upkeep effortless."
+                            </p>
+                            <p class="text-muted mb-0 fw-bold">Michael Chen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="fplogo.webp" alt="Jennifer Martinez" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                            <h5 class="card-title mb-1">Outstanding Service</h5>
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2 text-muted">5/5</span>
+                            </div>
+                            <p class="card-text">
+                                "The patio and pool combination they built for us is absolutely gorgeous. The craftsmanship is top-notch and the entire process was smooth from start to finish. Highly recommend their services!"
+                            </p>
+                            <p class="text-muted mb-0 fw-bold">Jennifer Martinez</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="aboutus1.webp" alt="David Rodriguez" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                            <h5 class="card-title mb-1">Beyond Expectations</h5>
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2 text-muted">5/5</span>
+                            </div>
+                            <p class="card-text">
+                                "Fantastico Pools delivered exactly what they promised and more. The modern design they created fits perfectly with our contemporary home. The water features and lighting are spectacular at night."
+                            </p>
+                            <p class="text-muted mb-0 fw-bold">David Rodriguez</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="aboutus2.webp" alt="Lisa Thompson" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                            <h5 class="card-title mb-1">Professional Excellence</h5>
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span class="ms-2 text-muted">5/5</span>
+                            </div>
+                            <p class="card-text">
+                                "Working with Fantastico Pools was a pleasure. They listened to our needs and provided innovative solutions. The pool they built has become the heart of our family's outdoor activities."
+                            </p>
+                            <p class="text-muted mb-0 fw-bold">Lisa Thompson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>
+                                    How long does a typical pool installation take?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    A typical pool installation takes 4-8 weeks from start to finish, depending on the size, complexity, and weather conditions. This includes site preparation, excavation, concrete work, plumbing, electrical, and finishing touches. We'll provide you with a detailed timeline during your consultation.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>
+                                    What is included in your pool maintenance services?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our comprehensive maintenance packages include regular water testing, chemical balancing, filter cleaning, equipment inspection, and minor repairs. We also offer seasonal services like opening/closing, resurfacing, and equipment upgrades to keep your pool in perfect condition year-round.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>
+                                    Do you offer financing options for pool construction?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we partner with several financing companies to offer flexible payment options for pool construction projects. We can help you explore low-interest financing plans that fit your budget. Contact us to discuss your financing needs and we'll guide you through the available options.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="400">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>
+                                    What types of pools do you specialize in?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We specialize in custom-designed swimming pools including infinity pools, natural stone pools, modern geometric designs, and traditional resort-style pools. We also offer complete backyard transformations that include patios, outdoor kitchens, fire pits, and landscaping to create your perfect outdoor oasis.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="500">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>
+                                    How do you handle permits and local regulations?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We handle all permitting and ensure compliance with local building codes, HOA regulations, and environmental requirements. Our team has extensive experience navigating the permitting process in the Dallas-Fort Worth area and will manage all paperwork on your behalf to ensure a smooth construction process.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OPTIONAL TEMPLATE SECTIONS ===== -->
+    <!-- Lead Section for Optional Templates -->
+    <section class="templates-lead py-5 bg-light text-center">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-3 fw-bold">Additional Sections (Optional Templates)</h2>
+            <p class="lead text-muted mb-0">Below are proposed layout templates to expand your website. Review each section and choose what works best for your business needs.</p>
+        </div>
+    </section>
+
+    <!-- 1. Services Section -->
+    <section id="services" class="services py-5">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Our Services</h2>
+                <p class="text-muted lead">Comprehensive pool solutions tailored to your vision</p>
+            </div>
+            <div class="row g-4">
+                <!-- Service Card 1 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-water fs-1 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-semibold">In-Ground Pools</h5>
+                            <p class="text-muted small">Custom designed and professionally installed pools built to last decades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightbulb fs-1 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-semibold">Pool Features</h5>
+                            <p class="text-muted small">Lighting, water features, heating systems, and automation technology.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-wrench fs-1 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-semibold">Maintenance</h5>
+                            <p class="text-muted small">Professional cleaning, repairs, renovations, and seasonal maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-pencil-square fs-1 text-primary mb-3 d-block"></i>
+                            <h5 class="fw-semibold">Design Consultation</h5>
+                            <p class="text-muted small">Expert guidance in creating your dream backyard environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Process Section -->
+    <section id="process" class="process py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Our Process</h2>
+                <p class="text-muted lead">From consultation to completion, we manage every step</p>
+            </div>
+            <div class="row g-4">
+                <!-- Process Step 1 -->
+                <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <span class="fs-4 fw-bold">1</span>
+                        </div>
+                    </div>
+                    <h5 class="fw-semibold">Consultation</h5>
+                    <p class="text-muted small">Meet with our experts to discuss your vision, budget, and timeline. We listen to your ideas and provide professional recommendations.</p>
+                    <small class="text-primary fw-semibold">1-2 weeks</small>
+                </div>
+
+                <!-- Process Step 2 -->
+                <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <span class="fs-4 fw-bold">2</span>
+                        </div>
+                    </div>
+                    <h5 class="fw-semibold">Design & Permitting</h5>
+                    <p class="text-muted small">We create detailed designs and handle all permitting requirements with local authorities. Your approval comes before construction.</p>
+                    <small class="text-primary fw-semibold">2-4 weeks</small>
+                </div>
+
+                <!-- Process Step 3 -->
+                <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mb-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <span class="fs-4 fw-bold">3</span>
+                        </div>
+                    </div>
+                    <h5 class="fw-semibold">Construction</h5>
+                    <p class="text-muted small">Our skilled team builds your pool with precision and care. Regular updates keep you informed of progress every step of the way.</p>
+                    <small class="text-primary fw-semibold">4-12 weeks</small>
+                </div>
+
+                <!-- Process Step 4 -->
+                <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="mb-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <span class="fs-4 fw-bold">4</span>
+                        </div>
+                    </div>
+                    <h5 class="fw-semibold">Completion & Training</h5>
+                    <p class="text-muted small">Final inspections, water chemistry setup, and training on maintenance and equipment operation. Your oasis is ready!</p>
+                    <small class="text-primary fw-semibold">Final week</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Materials & Technology Section -->
+    <section id="materials" class="materials py-5">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Materials & Technology</h2>
+                <p class="text-muted lead">Premium finishes and cutting-edge solutions</p>
+            </div>
+            <div class="row align-items-center g-5">
+                <!-- Materials Column -->
+                <div class="col-md-6" data-aos="fade-right">
+                    <h5 class="fw-semibold mb-4">Pool Finishes</h5>
+                    <div class="list-group list-group-flush mb-4">
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Pebble Finish</h6>
+                                <p class="text-muted small mb-0">Durable, non-slip surface with natural stone appearance. Long-lasting and comfortable underfoot.</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Premium Tile</h6>
+                                <p class="text-muted small mb-0">Custom designs with infinite color and pattern options. Elegant and easy to maintain.</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Fiberglass</h6>
+                                <p class="text-muted small mb-0">Pre-fabricated shapes with lower maintenance. Quick installation and consistent quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="fw-semibold mb-4">Equipment & Systems</h5>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Smart Automation</h6>
+                                <p class="text-muted small mb-0">Control temperature, lighting, and features from your phone. Modern convenience at your fingertips.</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Solar Heating</h6>
+                                <p class="text-muted small mb-0">Eco-friendly solution to extend your swimming season. Reduce energy costs significantly.</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Variable Speed Pumps</h6>
+                                <p class="text-muted small mb-0">Energy-efficient circulation. Save up to 90% on pump energy costs compared to single-speed pumps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <img src="2.jpg" class="img-fluid rounded shadow-lg" alt="Pool materials and finishes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Before & After Section -->
+    <section id="before-after" class="before-after py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Transformations</h2>
+                <p class="text-muted lead">See the power of expert pool design and construction</p>
+            </div>
+            <div class="row g-4">
+                <!-- Transformation 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shadow-sm border-0 overflow-hidden h-100">
+                        <div class="position-relative" style="height: 250px; overflow: hidden;">
+                            <img src="1.jpg" class="card-img-top h-100 w-100 object-fit-cover" alt="Backyard transformation">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-semibold mb-2">Modern Oasis</h5>
+                            <p class="text-muted small">Transformed a bare backyard into a stunning entertainment space with custom pool design and professional landscaping.</p>
+                            <small class="text-primary fw-semibold">Project Duration: 8 weeks</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transformation 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card shadow-sm border-0 overflow-hidden h-100">
+                        <div class="position-relative" style="height: 250px; overflow: hidden;">
+                            <img src="2.jpg" class="card-img-top h-100 w-100 object-fit-cover" alt="Luxury pool project">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-semibold mb-2">Resort-Style Retreat</h5>
+                            <p class="text-muted small">Created a luxury resort-style pool with infinity edge, water features, and integrated outdoor kitchen.</p>
+                            <small class="text-primary fw-semibold">Project Duration: 12 weeks</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transformation 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card shadow-sm border-0 overflow-hidden h-100">
+                        <div class="position-relative" style="height: 250px; overflow: hidden;">
+                            <img src="3.jpg" class="card-img-top h-100 w-100 object-fit-cover" alt="Family pool design">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-semibold mb-2">Family Entertainment Hub</h5>
+                            <p class="text-muted small">Built a family-friendly pool with shallow recreation area, diving section, and sun shelf seating.</p>
+                            <small class="text-primary fw-semibold">Project Duration: 10 weeks</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Financing & Warranty Section -->
+    <section id="financing" class="financing py-5">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Financing & Warranties</h2>
+                <p class="text-muted lead">Flexible payment options and comprehensive protection</p>
+            </div>
+            <div class="row g-4">
+                <!-- Financing Column -->
+                <div class="col-md-6" data-aos="fade-right">
+                    <h5 class="fw-semibold mb-4">Payment Options</h5>
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-credit-card text-primary fs-4 me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-semibold mb-2">Flexible Financing Plans</h6>
+                                    <p class="text-muted small mb-0">We work with leading lenders to offer flexible financing options. Spread your investment over time with competitive rates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-percent text-primary fs-4 me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-semibold mb-2">Monthly Payment Plans</h6>
+                                    <p class="text-muted small mb-0">Custom payment schedules tailored to your budget. Typically 0-36 month options available depending on project size.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-hand-thumbs-up text-primary fs-4 me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-semibold mb-2">Home Equity Options</h6>
+                                    <p class="text-muted small mb-0">Use your home equity to fund your pool project. Often the most cost-effective financing solution available.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warranty Column -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <h5 class="fw-semibold mb-4">Comprehensive Warranties</h5>
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-shield-check text-primary fs-4 me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-semibold mb-2">Construction Warranty</h6>
+                                    <p class="text-muted small mb-0">5-year warranty on construction workmanship. We stand behind our work and will address any defects promptly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-tools text-primary fs-4 me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-semibold mb-2">Equipment Warranties</h6>
+                                    <p class="text-muted small mb-0">Manufacturer warranties on all equipment (pumps, heaters, filters). Extended coverage plans available for additional peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-file-earmark-check text-primary fs-4 me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-semibold mb-2">Satisfaction Guarantee</h6>
+                                    <p class="text-muted small mb-0">If you're not satisfied with your pool, we'll work with you to make it right. Your satisfaction is our priority.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Pool Maintenance Guide Section -->
+    <section id="maintenance-guide" class="maintenance-guide py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Pool Maintenance Guide</h2>
+                <p class="text-muted lead">Keep your pool in perfect condition year-round</p>
+            </div>
+            <div class="row g-4">
+                <!-- Maintenance Card 1 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 rounded p-3 mb-3 text-center">
+                                <i class="bi bi-cloud-sun text-primary fs-3"></i>
+                            </div>
+                            <h5 class="fw-semibold mb-2">Spring Opening</h5>
+                            <p class="text-muted small mb-3">Get your pool ready after winter: Remove covers, balance water chemistry, run filters and check equipment.</p>
+                            <small class="text-primary fw-semibold">Professional Service Available</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maintenance Card 2 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 rounded p-3 mb-3 text-center">
+                                <i class="bi bi-droplet text-primary fs-3"></i>
+                            </div>
+                            <h5 class="fw-semibold mb-2">Water Chemistry</h5>
+                            <p class="text-muted small mb-3">Weekly testing and adjustment of pH, chlorine, alkalinity, and calcium hardness for safe, clear water.</p>
+                            <small class="text-primary fw-semibold">DIY or Professional</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maintenance Card 3 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 rounded p-3 mb-3 text-center">
+                                <i class="bi bi-brush text-primary fs-3"></i>
+                            </div>
+                            <h5 class="fw-semibold mb-2">Regular Cleaning</h5>
+                            <p class="text-muted small mb-3">Skim debris daily, brush walls weekly, vacuum pool floor, and clean filters for optimal circulation.</p>
+                            <small class="text-primary fw-semibold">Weekly Tasks</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maintenance Card 4 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary bg-opacity-10 rounded p-3 mb-3 text-center">
+                                <i class="bi bi-snow text-primary fs-3"></i>
+                            </div>
+                            <h5 class="fw-semibold mb-2">Fall Winterization</h5>
+                            <p class="text-muted small mb-3">Prepare pool for winter: Balance chemicals, add winterization chemicals, lower water level, drain equipment.</p>
+                            <small class="text-primary fw-semibold">Professional Service Available</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 p-4 bg-white rounded shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                <h5 class="fw-semibold mb-3">Professional Maintenance Service</h5>
+                <p class="text-muted mb-3">Don't want to handle maintenance yourself? We offer comprehensive weekly maintenance packages that include all testing, chemical balancing, cleaning, and equipment checks. Let us keep your pool perfect so you can enjoy it!</p>
+                <a href="#contact" class="btn btn-primary">Get Maintenance Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Safety & Regulations Section -->
+    <section id="safety" class="safety py-5">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Safety & Compliance</h2>
+                <p class="text-muted lead">Your pool meets all local codes and safety standards</p>
+            </div>
+            <div class="row align-items-center g-5">
+                <!-- Safety Image -->
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="aboutus1.webp" class="img-fluid rounded shadow-lg" alt="Pool safety features">
+                </div>
+
+                <!-- Safety Content -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <h5 class="fw-semibold mb-4">Certified & Compliant</h5>
+                    <div class="list-group list-group-flush mb-4">
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Building Code Compliance</h6>
+                                <p class="text-muted small mb-0">All pools built to meet or exceed current local building codes and regulations. Regular inspections throughout construction.</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Safety Features</h6>
+                                <p class="text-muted small mb-0">Protective fencing, alarms, drain covers, and anti-entrapment devices. All safety features required by law are installed.</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Permitting & Inspections</h6>
+                                <p class="text-muted small mb-0">We handle all permitting requirements and coordinate with city inspectors. Inspections performed at key stages of construction.</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0 pb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">Insurance & Licensing</h6>
+                                <p class="text-muted small mb-0">Fully licensed, bonded, and insured. Our credentials are always current and available for verification.</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex align-items-start border-0 ps-0">
+                            <i class="bi bi-check-circle-fill text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-semibold mb-1">HSA Compliance</h6>
+                                <p class="text-muted small mb-0">Full compliance with Virginia Graeme Baker Pool and Spa Safety Act. All drain anti-entrapment devices meet federal standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== END OPTIONAL TEMPLATES ===== -->
+
     <!-- Contact / view type = form -->
     <section id="contact" class="contact text-center">
         <div class="container" data-aos="fade-up">
             <h2 class="mb-5 fw-bold">Contact Us</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
+                    <h5>Give us a call or text</h5>
+                    <br />
+                    <p>For an amazing backyard transformation that includes stunning patio design and expert pool
+                        building, contact your local pool builder at <a href="tel:+19722159331" style="color: white; text-decoration: none; font-weight: 600; cursor: pointer;">972-215-9331</a>.</p>
+                    <h5>Send us an email</h5>
+                    <br />
+                    <p><a href="mailto:fantasticopools@gmail.com" style="color: white; text-decoration: none; font-weight: 600; cursor: pointer;">fantasticopools@gmail.com</a></p>
+                    <br />
+                    <br />
+                </div>
+            </div>
+            <!-- <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
                     <form>
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Your Name" required />
@@ -584,7 +1268,7 @@
                         </button>
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -594,6 +1278,53 @@
     <script>
         AOS.init({ duration: 800, once: true });
 
+        // Parallax scroll effect on hero video - smooth and mobile compatible
+        window.addEventListener('scroll', function() {
+            const heroVideo = document.querySelector('.hero-video');
+            const scrollPosition = window.pageYOffset;
+            
+            // Apply parallax transform - video moves slower than scroll (40% of scroll distance)
+            // This creates a depth effect where content appears to move faster than background
+            heroVideo.style.transform = `translateY(${scrollPosition * 0.4}px)`;
+        }, { passive: true }); // passive: true for better scroll performance
+
+        // Play button for videos
+        document.querySelectorAll('.play-btn').forEach(btn => {
+            const id = btn.dataset.id;
+            const video = document.querySelector(`.video-player[data-id="${id}"]`);
+            const media = btn.parentElement; // card-media div
+
+            // Add smooth fade transition
+            btn.style.transition = 'opacity 0.5s ease';
+            btn.style.willChange = 'opacity';
+
+            // Hover behavior for pause button on the whole media area
+            media.addEventListener('mouseenter', () => {
+                if (!video.paused) btn.style.opacity = '1';
+            });
+            media.addEventListener('mouseleave', () => {
+                if (!video.paused) btn.style.opacity = '0';
+            });
+
+            // Reset button when video ends
+            video.addEventListener('ended', () => {
+                btn.innerHTML = '<i class="bi bi-play-fill fs-3 text-primary"></i>';
+                btn.style.opacity = '1';
+            });
+
+            btn.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = '<i class="bi bi-pause-fill fs-3 text-primary"></i>';
+                    btn.style.opacity = '0';
+                } else {
+                    video.pause();
+                    btn.innerHTML = '<i class="bi bi-play-fill fs-3 text-primary"></i>';
+                    btn.style.opacity = '1';
+                }
+            });
+        });
+
         // Sticky navbar on scroll
         window.addEventListener("scroll", function () {
             const navbar = document.getElementById("navbar");
@@ -601,6 +1332,132 @@
                 navbar.classList.add("scrolled");
             } else {
                 navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Gallery modal functionality
+        const galleryImages = [
+            { src: "3.jpg", caption: "Luxury infinity pool with stunning mountain views", type: "image" },
+            { src: "2.jpg", caption: "Modern pool design with contemporary landscaping", type: "image" },
+            { src: "1.jpg", caption: "Elegant backyard oasis with custom water features", type: "image" },
+            { src: "2.jpg", caption: "Resort-style pool with premium finishes", type: "image" },
+            { src: "1.jpg", caption: "Custom pool construction with attention to detail", type: "image" },
+            { src: "3.jpg", caption: "Transforming backyards into dream destinations", type: "image" },
+            { src: "aboutus1.webp", caption: "Creating lasting memories in beautifully designed backyard spaces", type: "image" },
+            { src: "aboutus2.webp", caption: "Every detail matters in crafting your perfect outdoor retreat", type: "image" },
+            { src: "m3_out.mp4", caption: "Showcasing our pool construction expertise", type: "video", poster: "m3_thumbnail.jpg", dataId: "1" },
+            { src: "m1_out.mp4", caption: "Professional pool installation and design", type: "video", poster: "m1_thumbnail.jpg", dataId: "m1" },
+            { src: "m2_out.mp4", caption: "Quality craftsmanship in every project", type: "video", poster: "m2_thumbnail.jpg", dataId: "m2" },
+            { src: "m3_out.mp4", caption: "Expert pool construction and design", type: "video", poster: "m3_thumbnail.jpg", dataId: "m3" },
+            { src: "m4_out.mp4", caption: "Transforming outdoor spaces into luxury retreats", type: "video", poster: "m4_thumbnail.jpg", dataId: "m4" },
+            { src: "m5_out.mp4", caption: "Excellence in pool construction and design", type: "video", poster: "m5_thumbnail.jpg", dataId: "m5" },
+            { src: "m6_out.mp4", caption: "Innovative pool features and design", type: "video", poster: "m6_thumbnail.jpg", dataId: "m6" },
+            { src: "m7_out.mp4", caption: "Premium pool construction services", type: "video", poster: "m7_thumbnail.jpg", dataId: "m7" },
+            { src: "m8_out.mp4", caption: "Creating dream backyard retreats", type: "video", poster: "m8_thumbnail.jpg", dataId: "m8" }
+        ];
+        let currentGalleryIndex = 0;
+        const galleryModal = document.getElementById('galleryModal');
+        const galleryViewer = document.getElementById('galleryViewer');
+        const galleryCaption = document.getElementById('galleryCaption');
+        const galleryPrev = document.getElementById('galleryPrev');
+        const galleryNext = document.getElementById('galleryNext');
+
+        function showGalleryImage(index) {
+            currentGalleryIndex = index;
+            const item = galleryImages[index];
+            
+            if (item.type === "video") {
+                galleryViewer.innerHTML = `
+                    <video class="video-player w-100 h-100 object-fit-contain gallery-modal-video" data-id="${item.dataId}"
+                        poster="${item.poster}" muted playsinline preload="metadata">
+                        <source src="${item.src}" type="video/mp4" />
+                    </video>
+                `;
+                
+                // Add play button for modal video
+                const video = galleryViewer.querySelector('.gallery-modal-video');
+                const playBtn = document.createElement('button');
+                playBtn.className = 'play-btn btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow';
+                playBtn.style.width = '80px';
+                playBtn.style.height = '80px';
+                playBtn.innerHTML = '<i class="bi bi-play-fill fs-2 text-primary"></i>';
+                playBtn.setAttribute('aria-label', 'Play video');
+                
+                galleryViewer.appendChild(playBtn);
+                
+                // Handle play/pause for modal video
+                playBtn.addEventListener('click', () => {
+                    if (video.paused) {
+                        video.play();
+                        playBtn.innerHTML = '<i class="bi bi-pause-fill fs-2 text-primary"></i>';
+                        playBtn.style.opacity = '0';
+                    } else {
+                        video.pause();
+                        playBtn.innerHTML = '<i class="bi bi-play-fill fs-2 text-primary"></i>';
+                        playBtn.style.opacity = '1';
+                    }
+                });
+                
+                // Reset button when video ends
+                video.addEventListener('ended', () => {
+                    playBtn.innerHTML = '<i class="bi bi-play-fill fs-2 text-primary"></i>';
+                    playBtn.style.opacity = '1';
+                });
+                
+                // Hover behavior
+                galleryViewer.addEventListener('mouseenter', () => {
+                    if (!video.paused) playBtn.style.opacity = '1';
+                });
+                galleryViewer.addEventListener('mouseleave', () => {
+                    if (!video.paused) playBtn.style.opacity = '0';
+                });
+            } else {
+                galleryViewer.innerHTML = `<img src="${item.src}" class="img-fluid h-100 w-auto object-fit-contain">`;
+            }
+            
+            // Show/hide caption based on whether it exists
+            if (item.caption && item.caption.trim() !== '') {
+                galleryCaption.querySelector('p').textContent = item.caption;
+                galleryCaption.style.display = 'block';
+            } else {
+                galleryCaption.style.display = 'none';
+            }
+            
+            // Update button states
+            galleryPrev.style.opacity = index === 0 ? '0.5' : '1';
+            galleryNext.style.opacity = index === galleryImages.length - 1 ? '0.5' : '1';
+        }
+
+        // Gallery image click handlers
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.addEventListener('click', () => {
+                const index = parseInt(img.dataset.index);
+                showGalleryImage(index);
+                new bootstrap.Modal(galleryModal).show();
+            });
+        });
+
+        // Navigation buttons
+        galleryPrev.addEventListener('click', () => {
+            if (currentGalleryIndex > 0) {
+                showGalleryImage(currentGalleryIndex - 1);
+            }
+        });
+
+        galleryNext.addEventListener('click', () => {
+            if (currentGalleryIndex < galleryImages.length - 1) {
+                showGalleryImage(currentGalleryIndex + 1);
+            }
+        });
+
+        // Keyboard navigation
+        galleryModal.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && currentGalleryIndex > 0) {
+                showGalleryImage(currentGalleryIndex - 1);
+            } else if (e.key === 'ArrowRight' && currentGalleryIndex < galleryImages.length - 1) {
+                showGalleryImage(currentGalleryIndex + 1);
+            } else if (e.key === 'Escape') {
+                bootstrap.Modal.getInstance(galleryModal).hide();
             }
         });
     </script>
