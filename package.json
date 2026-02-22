@@ -1,0 +1,13 @@
+{
+  "name": "fantastico-pools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fantastico Pools — static site builder",
+  "scripts": {
+    "build": " cmd /c regenerate_thumbnails.bat && powershell -ExecutionPolicy Bypass -File convert_videos.ps1 && node build.js",
+    "clean": "cmd /c regenerate_thumbnails.bat clean && powershell -ExecutionPolicy Bypass -File convert_videos.ps1 clean && if exist dist rmdir /s /q dist",
+    "regenerate-thumbs": "cmd /c regenerate_thumbnails.bat",
+    "convert-videos": "powershell -ExecutionPolicy Bypass -File convert_videos.ps1",
+    "deploy:ftp": "echo Upload the dist/ folder to your web host via FTP/SFTP"
+  }
+}

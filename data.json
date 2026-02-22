@@ -1,0 +1,129 @@
+{
+  "site": {
+    "title": "Fantastico Pools",
+    "logo": "fplogo.webp",
+    "font": "Inter",
+    "social": {
+      "facebook": "https://www.facebook.com/fantastico.pools",
+      "instagram": "https://www.instagram.com/fantasticopools"
+    }
+  },
+
+  "hero": {
+    "image": "3.jpg",
+    "badge": "Central Texas & Hill Country's Premier Pool Builder",
+    "heading": "Luxury pools, honest pricing,<br>exceptional craftsmanship",
+    "subheading": "Your outdoor oasis starts here",
+    "ctaText": "Contact us for a quote",
+    "ctaLink": "#contact"
+  },
+
+  "trustStrip": [
+    { "icon": "bi-star-fill",    "text": "<strong>4.9</strong> · 47 Reviews" },
+    { "icon": "bi-award",        "text": "<strong>12+</strong> Years Experience" },
+    { "icon": "bi-shield-check", "text": "Licensed & Insured" },
+    { "icon": "bi-tools",        "text": "<strong>200+</strong> Pools Built" }
+  ],
+
+  "showcase": {
+    "badge": "Portfolio",
+    "title": "Our Finest Work",
+    "subtitle": "Transforming backyards into breathtaking outdoor retreats",
+    "items": [
+      { "type": "video", "src": "m5_out.mp4", "thumb": "m5_thumbnail.jpg", "title": "Spa Overflow Feature",    "description": "Elevated spa with 360° spillway into the main pool" },
+      { "type": "photo", "src": "webp/9.webp",  "title": "Lakeside Infinity Edge",  "description": "Vanishing edge pool overlooking Lake Buchanan" },
+      { "type": "photo", "src": "webp/3.webp",  "title": "Sunset Retreat",           "description": "Pebble-finish pool with integrated sun shelf and ambient lighting" },
+      { "type": "video", "src": "m2_out.mp4", "thumb": "m2_thumbnail.jpg", "title": "Waterfall in Action",     "description": "Natural stone cascade with grotto walkthrough" },
+      { "type": "photo", "src": "webp/14.webp", "title": "Poolside Fire Feature",    "description": "Gas fire pit integrated into the pool deck for evening ambiance" },
+      { "type": "photo", "src": "webp/6.webp",  "title": "Elevated Spa Retreat",     "description": "Raised spillover spa with fire bowls and travertine decking" },
+      { "type": "photo", "src": "webp/11.webp", "title": "Hillside Plunge Pool",     "description": "Compact luxury design built into a sloped lot with panoramic views" },
+      { "type": "video", "src": "m8_out.mp4", "thumb": "m8_thumbnail.jpg", "title": "Before & After",          "description": "Bare lot to luxury outdoor living in just 10 weeks" },
+      { "type": "photo", "src": "webp/1.webp",  "title": "Resort-Style Oasis",       "description": "Complete backyard transformation with infinity edge and custom stonework" },
+      { "type": "photo", "src": "webp/15.webp", "title": "Lap Pool Design",          "description": "Sleek 40-foot exercise pool with mosaic tile finish" },
+      { "type": "video", "src": "m4_out.mp4", "thumb": "m4_thumbnail.jpg", "title": "Night Lighting Tour",     "description": "Full-color LED system bringing the pool to life after dark" },
+      { "type": "photo", "src": "webp/7.webp",  "title": "Tropical Escape",          "description": "Lush landscaping and swim-up bar for a backyard paradise" },
+      { "type": "photo", "src": "webp/4.webp",  "title": "Natural Rock Grotto",      "description": "Hand-laid flagstone with cascading waterfall feature" },
+      { "type": "video", "src": "m6_out.mp4", "thumb": "m6_thumbnail.jpg", "title": "Client Walkthrough",      "description": "Homeowner tour of their completed backyard retreat" },
+      { "type": "photo", "src": "webp/12.webp", "title": "Outdoor Living Suite",     "description": "Pool, kitchen, and pergola designed as one cohesive space" },
+      { "type": "photo", "src": "webp/2.webp",  "title": "Modern Geometric Pool",    "description": "Clean lines and LED lighting for a contemporary Hill Country home" },
+      { "type": "video", "src": "m1_out.mp4", "thumb": "m1_thumbnail.jpg", "title": "Build Timelapse",         "description": "From excavation to first swim in under 8 weeks" },
+      { "type": "photo", "src": "webp/10.webp", "title": "Classic Rectangle",        "description": "Timeless design with automatic cover and built-in bench seating" },
+      { "type": "photo", "src": "webp/16.webp", "title": "Entertainer's Dream",      "description": "Oversized deck, swim-up seating, and outdoor sound system integration" },
+      { "type": "photo", "src": "webp/5.webp",  "title": "Family Fun Pool",          "description": "Spacious freeform design with tanning ledge and spa combo" },
+      { "type": "video", "src": "m3_out.mp4", "thumb": "m3_thumbnail.jpg", "title": "Gunite Shaping",          "description": "Watch our crew sculpt the shell for a custom freeform pool" },
+      { "type": "photo", "src": "webp/8.webp",  "title": "Custom Water Features",    "description": "Sheer descent waterfalls with color-changing LED accents" },
+      { "type": "photo", "src": "webp/13.webp", "title": "Freeform Paradise",        "description": "Lagoon-style pool with beach entry and boulder accents" },
+      { "type": "video", "src": "m7_out.mp4", "thumb": "m7_thumbnail.jpg", "title": "Deck & Coping Install",   "description": "Precision stonework bringing the finishing touches together" }
+    ]
+  },
+
+  "about": {
+    "badge": "Who We Are",
+    "title": "Why Fantastico",
+    "subtitle": "Crafting dream backyards since day one",
+    "description": "At Fantastico Pools, we specialize in creating stunning backyard retreats that combine luxury design with expert craftsmanship. With years of experience in pool construction and patio design, our team is dedicated to transforming your outdoor space into a personal oasis. From modern minimalist pools to classic resort-style designs, we work closely with you to bring your vision to life. Our commitment to quality, attention to detail, and customer satisfaction sets us apart as your trusted local pool builder. Dive into excellence with Fantastico Pools – where your dream backyard becomes a reality.",
+    "services": [
+      { "icon": "bi-water",  "title": "New pool / Hot tub construction", "text": "Custom designed and professionally installed pools built to last decades." },
+      { "icon": "bi-tree",   "title": "Outdoor living areas",            "text": "Lighting, water features, heating systems, and automation technology." },
+      { "icon": "bi-wrench", "title": "Pool renovations",                "text": "Professional cleaning, repairs, renovations, and seasonal maintenance." }
+    ],
+    "financing": {
+      "title": "Flexible financing available",
+      "text": "Competitive rates & payment plans that fit your budget — make your dream pool affordable."
+    }
+  },
+
+  "process": {
+    "badge": "How It Works",
+    "title": "Our Process",
+    "subtitle": "From consultation to completion, we manage every step",
+    "steps": [
+      { "number": "1", "title": "Consultation",           "text": "Meet with our experts to discuss your vision, budget, and timeline. We listen to your ideas and provide professional recommendations.", "duration": "1-2 weeks" },
+      { "number": "2", "title": "Design & Permitting",    "text": "We create detailed designs and handle all permitting requirements with local authorities. Your approval comes before construction.",   "duration": "1-2 weeks" },
+      { "number": "3", "title": "Construction",           "text": "Our skilled team builds your pool with precision and care. Regular updates keep you informed of progress every step of the way.",     "duration": "4-6 weeks" },
+      { "number": "4", "title": "Completion & Training",  "text": "Final inspections, water chemistry setup, and training on maintenance and equipment operation. Your oasis is ready!",                "duration": "Final week" }
+    ]
+  },
+
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our services",
+    "items": [
+      {
+        "question": "How long does a typical pool installation take?",
+        "answer": "A typical pool installation takes 4-8 weeks from start to finish, depending on the size, complexity, and weather conditions. This includes site preparation, excavation, concrete work, plumbing, electrical, and finishing touches. We'll provide you with a detailed timeline during your consultation."
+      },
+      {
+        "question": "What is included in your pool maintenance services?",
+        "answer": "Our comprehensive maintenance packages include regular water testing, chemical balancing, filter cleaning, equipment inspection, and minor repairs. We also offer seasonal services like opening/closing, resurfacing, and equipment upgrades to keep your pool in perfect condition year-round."
+      },
+      {
+        "question": "Do you offer financing options for pool construction?",
+        "answer": "<strong>Absolutely — financing is available!</strong> We've partnered with trusted lending institutions to make your dream pool affordable. We offer flexible payment plans with competitive rates, including low monthly payment options and terms ranging from 12 to 180 months. Many homeowners are surprised at how accessible pool ownership can be with the right financing in place. During your free consultation, we'll walk you through all available options, help you find a plan that fits your budget, and even assist with the application process. <strong>Don't let budget concerns stop you from getting the backyard you deserve</strong> — reach out and let's explore what works for you."
+      },
+      {
+        "question": "What types of pools do you specialize in?",
+        "answer": "We specialize in custom-designed swimming pools including infinity pools, natural stone pools, modern geometric designs, and traditional resort-style pools. We also offer complete backyard transformations that include patios, outdoor kitchens, fire pits, and landscaping to create your perfect outdoor oasis."
+      },
+      {
+        "question": "How do you handle permits and local regulations?",
+        "answer": "We handle all permitting and ensure compliance with local building codes, HOA regulations, and environmental requirements. Our team has extensive experience navigating the permitting process across the Central Texas and Hill Country region and will manage all paperwork on your behalf to ensure a smooth construction process."
+      }
+    ]
+  },
+
+  "contact": {
+    "badge": "Get In Touch",
+    "title": "Start Your Pool Project",
+    "subtitle": "Schedule a free, no-pressure consultation — we'll visit your property, listen to your vision, and provide a detailed estimate",
+    "phone": "(972) 215-9331",
+    "phoneHref": "tel:+19722159331",
+    "phoneHours": "Mon–Sat · 8am–7pm",
+    "email": "fantasticopools@gmail.com",
+    "emailNote": "We reply within 24 hours",
+    "serviceArea": "Central Texas & Hill Country",
+    "serviceAreaDetail": "Austin · Round Rock · Georgetown & more",
+    "urgency": "<strong>Spring 2026 build slots are filling up.</strong> Book your consultation now to secure your preferred start date."
+  }
+}
