@@ -42,6 +42,7 @@
       { "type": "photo", "src": "webp/15.webp", "title": "Lap Pool Design",          "description": "Sleek 40-foot exercise pool with mosaic tile finish" },
       { "type": "video", "src": "m4_out.mp4", "thumb": "m4_thumbnail.jpg", "title": "Night Lighting Tour",     "description": "Full-color LED system bringing the pool to life after dark" },
       { "type": "photo", "src": "webp/7.webp",  "title": "Tropical Escape",          "description": "Lush landscaping and swim-up bar for a backyard paradise" },
+      { "type": "photo", "src": "webp/IMG_2054.jpeg",  "title": "Tropical Escape",          "description": "Lush landscaping and swim-up bar for a backyard paradise" },
       { "type": "photo", "src": "webp/4.webp",  "title": "Natural Rock Grotto",      "description": "Hand-laid flagstone with cascading waterfall feature" },
       { "type": "video", "src": "m6_out.mp4", "thumb": "m6_thumbnail.jpg", "title": "Client Walkthrough",      "description": "Homeowner tour of their completed backyard retreat" },
       { "type": "photo", "src": "webp/12.webp", "title": "Outdoor Living Suite",     "description": "Pool, kitchen, and pergola designed as one cohesive space" },
