@@ -19,15 +19,15 @@
   },
 
   "trustStrip": [
-    { "icon": "bi-star-fill",    "text": "<strong>4.9</strong> · 47 Reviews" },
+    { "icon": "bi-star-fill",    "text": "<strong>5</strong> · 47 Reviews" },
     { "icon": "bi-award",        "text": "<strong>12+</strong> Years Experience" },
     { "icon": "bi-shield-check", "text": "Licensed & Insured" },
-    { "icon": "bi-tools",        "text": "<strong>200+</strong> Pools Built" }
+    { "icon": "bi-tools",        "text": "<strong>150+</strong> Pools Built" }
   ],
 
   "showcase": {
     "badge": "Portfolio",
-    "title": "Our Finest Work",
+    "title": "Our Work",
     "subtitle": "Transforming backyards into breathtaking outdoor retreats",
     "items": [
       { "type": "video", "src": "m5_out.mp4", "thumb": "m5_thumbnail.jpg", "title": "Spa Overflow Feature",    "description": "Elevated spa with 360° spillway into the main pool" },
@@ -78,7 +78,7 @@
     "title": "Our Process",
     "subtitle": "From consultation to completion, we manage every step",
     "steps": [
-      { "number": "1", "title": "Consultation",           "text": "Meet with our experts to discuss your vision, budget, and timeline. We listen to your ideas and provide professional recommendations.", "duration": "1-2 weeks" },
+      { "number": "1", "title": "Consultation",           "text": "Meet with our experts to discuss your vision, budget, and timeline. We listen to your ideas and provide professional recommendations.", "duration": "1 week" },
       { "number": "2", "title": "Design & Permitting",    "text": "We create detailed designs and handle all permitting requirements with local authorities. Your approval comes before construction.",   "duration": "1-2 weeks" },
       { "number": "3", "title": "Construction",           "text": "Our skilled team builds your pool with precision and care. Regular updates keep you informed of progress every step of the way.",     "duration": "4-6 weeks" },
       { "number": "4", "title": "Completion & Training",  "text": "Final inspections, water chemistry setup, and training on maintenance and equipment operation. Your oasis is ready!",                "duration": "Final week" }
@@ -92,7 +92,7 @@
     "items": [
       {
         "question": "How long does a typical pool installation take?",
-        "answer": "A typical pool installation takes 4-8 weeks from start to finish, depending on the size, complexity, and weather conditions. This includes site preparation, excavation, concrete work, plumbing, electrical, and finishing touches. We'll provide you with a detailed timeline during your consultation."
+        "answer": "A typical pool installation takes 4-6 weeks from start to finish, depending on the size, complexity, and weather conditions. This includes site preparation, excavation, concrete work, plumbing, electrical, and finishing touches. We'll provide you with a detailed timeline during your consultation."
       },
       {
         "question": "What is included in your pool maintenance services?",
@@ -123,7 +123,7 @@
     "email": "fantasticopools@gmail.com",
     "emailNote": "We reply within 24 hours",
     "serviceArea": "Central Texas & Hill Country",
-    "serviceAreaDetail": "Austin · Round Rock · Georgetown & more",
+    "serviceAreaDetail": "Burnet · Austin · Round Rock · Georgetown & more",
     "urgency": "<strong>Spring 2026 build slots are filling up.</strong> Book your consultation now to secure your preferred start date."
   }
 }
