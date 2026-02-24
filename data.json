@@ -20,7 +20,7 @@
 
   "trustStrip": [
     { "icon": "bi-star-fill",    "text": "<strong>5</strong> · 47 Reviews" },
-    { "icon": "bi-award",        "text": "<strong>12+</strong> Years Experience" },
+    { "icon": "bi-award",        "text": "<strong>10+</strong> Years Experience" },
     { "icon": "bi-shield-check", "text": "Licensed & Insured" },
     { "icon": "bi-tools",        "text": "<strong>150+</strong> Pools Built" }
   ],
